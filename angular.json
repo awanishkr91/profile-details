@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myresume": {
+    "mi-profile": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/myresume",
+            "outputPath": "dist/mi-profile",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "myresume:build"
+            "browserTarget": "mi-profile:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "myresume:build:production"
+              "browserTarget": "mi-profile:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "myresume:build"
+            "browserTarget": "mi-profile:build"
           }
         },
         "test": {
@@ -121,15 +121,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "myresume:serve"
+            "devServerTarget": "mi-profile:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "myresume:serve:production"
+              "devServerTarget": "mi-profile:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "myresume"
+  "defaultProject": "mi-profile"
 }

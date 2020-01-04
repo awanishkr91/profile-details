@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'myresume'`, () => {
+  it(`should have as title 'mi-profile'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('myresume');
+    expect(app.title).toEqual('mi-profile');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('myresume app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('mi-profile app is running!');
   });
 });

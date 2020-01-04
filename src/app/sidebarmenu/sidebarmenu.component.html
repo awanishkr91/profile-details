@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ 
+<body>
+  <script>
+   
+    $("a").on("click", function() {
+      alert("clicked");
+     $("a").removeClass("active");
+     $(this).addClass("active");
+   });
+ 
+ </script>
+        <div class="sidebar">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Clarence Taylor</span>
+            <span class="d-none d-lg-block">
+              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../../assets/Images/logo.png" alt="">
+            </span>
+            <strong>Awanish Kumar</strong>
+          </a>
+          <a class="active" routerLink="/about">ABOUT</a>
+          <a routerLink="/experiance">EXPERIANCE</a>
+          <a routerLink="/eduction">EDUCTION</a>
+          <a routerLink="/skills">SKILLS</a>
+          <a routerLink="/interest">INTEREST</a>
+          <a routerLink="/awards">AWARDS</a>
+        </div>
+          
+</body>
+</html> 
